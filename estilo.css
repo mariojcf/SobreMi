@@ -1,0 +1,103 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sección Hero */
+.hero {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 3rem 1rem;
+}
+.hero h1 {
+    font-size: 2.5rem;
+}
+.hero p {
+    opacity: 0.9;
+}
+
+/* Imágenes de bandas */
+.band-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+.band-img:hover {
+    transform: scale(1.05);
+}
+
+/* Tarjetas */
+.card {
+    border-radius: 8px;
+}
+
+/* Video */
+video {
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* ===================== */
+/*      RESPONSIVO       */
+/* ===================== */
+@media (max-width: 992px) {
+    /* Ajuste para tablets */
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajuste para móviles */
+    .hero {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .band-img {
+        width: 40px;
+        height: 40px;
+    }
+    .navbar .btn {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Móviles pequeños */
+    body {
+        padding: 0;
+    }
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    .hero p {
+        font-size: 0.9rem;
+    }
+    .band-img {
+        width: 35px;
+        height: 35px;
+    }
+    video {
+        max-height: 200px;
+    }
+    /* Ocultar video */
+    .video-section {
+        display: none !important;
+    }
+}
+
